@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#007acc" />
+    <meta name="description" content="A customized React application template for the Tic-Tac-Toe game with enhanced performance and modern design." />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/index.css" />
+    
+    <title>Tic-Tac-Toe Game</title>
+    <style>
+      /* Inline CSS for quick prototyping */
+      body {
+        background-color: #f5f5f5;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      #root {
+        width: 100%;
+        max-width: 480px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        border-radius: 8px;
+      }
+      .game {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .game-board {
+        margin-right: 20px;
+      }
+      .game-info {
+        margin-left: 20px;
+      }
+      .status {
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .square {
+        background: #fff;
+        border: 1px solid #999;
+        float: left;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 34px;
+        height: 34px;
+        margin-right: -1px;
+        margin-top: -1px;
+        padding: 0;
+        text-align: center;
+        width: 34px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+      .square:hover {
+        background-color: #f0f0f0;
+        transform: scale(1.1);
+      }
+      .square:active {
+        background-color: #ddd;
+        transform: scale(0.95);
+      }
+      .square.highlight {
+        background-color: yellow;
+      }
+      .board-row:after {
+        clear: both;
+        content: '';
+        display: table;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    <!--
+      Customizations:
+      - Enhanced viewport and user experience through flexible container layout.
+      - Quick prototyping styles included in the head for ease of access.
+      - Adapted the HTML for the Tic-Tac-Toe game to match game-specific requirements.
+      - Added effects for clicks and hover on game squares to make gameplay more interactive and dynamic.
+    -->
+  </body>
+</html>
